@@ -1,5 +1,5 @@
 generate:
-	@[ -d $(dir) ] && gcc $(dir)/*.cpp -o $(dir)_bin -l glfw -l GLEW -l GL -l stdc++
+	@[ -d $(dir) ] && gcc $(dir)/*.cpp -o $(dir)_bin -l glfw -l GLEW -l GL -l stdc++ -l m
 .PHONY:generate
 
 clean:
